@@ -1,0 +1,55 @@
+LOCUS       FJ712034                 547 bp    mRNA    linear   MAM 17-MAR-2010
+DEFINITION  Panthera leo isolate lion 1 interferon-gamma (IFNG) mRNA, complete
+            cds.
+ACCESSION   FJ712034
+VERSION     FJ712034.1
+KEYWORDS    .
+SOURCE      Panthera leo (lion)
+  ORGANISM  Panthera leo
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Carnivora; Feliformia; Felidae;
+            Pantherinae; Panthera.
+REFERENCE   1  (bases 1 to 547)
+  AUTHORS   Maas,M., Van Rhijn,I., Allsopp,M.T. and Rutten,V.P.
+  TITLE     Lion (Panthera leo) and cheetah (Acinonyx jubatus) IFN-gamma
+            sequences
+  JOURNAL   Vet. Immunol. Immunopathol. 134 (3-4), 296-298 (2010)
+   PUBMED   19913304
+REFERENCE   2  (bases 1 to 547)
+  AUTHORS   Maas,M., Van Rhijn,I., Allsopp,M.T.E.P. and Rutten,V.P.M.G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-JAN-2009) Department of Infectious diseases and
+            Immunology, University of Utrecht, Faculty of Veterinary Medicine,
+            Yalelaan 1, Utrecht, Utrecht 3584 CL, The Netherlands
+FEATURES             Location/Qualifiers
+     source          1..547
+                     /organism="Panthera leo"
+                     /mol_type="mRNA"
+                     /isolate="lion 1"
+                     /db_xref="taxon:9689"
+                     /PCR_primers="fwd_seq: ggcctaactctctgaaacgatg, rev_seq:
+                     ggtcgtcctgcctgcaatatttg"
+     gene            1..547
+                     /gene="IFNG"
+     CDS             20..523
+                     /gene="IFNG"
+                     /codon_start=1
+                     /product="interferon-gamma"
+                     /protein_id="ACV73795.1"
+                     /translation="MNYTSFIFAFQLCIILCSSGCYCQAMFFKEIEELKGYFNASNPD
+                     VADGGSLFVDILKNWKEESDKTIIQSQIVSFYLKMFENLKDDDQRIQRNMDTIKEDML
+                     DKLLNTSSSKRDDFLKLIQIPVNDLQVQRKAINELFKVMNDLSPRSNLRKRKRSQNLF
+                     RGRRASK"
+ORIGIN      
+        1 ggcctaactc tctgaaacga tgaattacac aagttttatt ttcgcttttc agctttgcat
+       61 aattttgtgt tcttctggtt gttactgtca ggccatgttt tttaaagaaa tagaagagct
+      121 aaagggatat tttaatgcaa gtaatccaga tgtagcagat ggtgggtcgc ttttcgtaga
+      181 cattttgaag aactggaaag aggagagtga taaaacaata attcaaagcc aaattgtctc
+      241 cttctacttg aaaatgtttg aaaacctgaa agatgatgac cagcgcattc aaaggaacat
+      301 ggacaccatc aaggaagaca tgcttgataa gttgttaaat accagctcca gtaaacggga
+      361 tgacttcctc aagctgattc aaatccctgt gaatgatctg caggtccagc gcaaagcaat
+      421 aaatgaactc ttcaaagtga tgaacgatct ctcaccaaga tctaacctga ggaagcggaa
+      481 aaggagtcag aatctgtttc gaggccgtag agcatcgaaa taatggtcgt cctgcctgca
+      541 atatttg
+//
+
