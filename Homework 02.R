@@ -1,4 +1,9 @@
+setwd("/Users/Alvin/Downloads/Bioinformatics")
 seq_1 <- readDNAStringSet("/Users/Alvin/Downloads/sequence (1).fasta")
+seq_2 <- readDNAStringSet("/Users/Alvin/Downloads/sequence (2).fasta")
+seq_3 <- readDNAStringSet("/Users/Alvin/Downloads/sequence (3).fasta")
+seq_4 <- readDNAStringSet("/Users/Alvin/Downloads/sequence (4).fasta")
+seq_5 <- readDNAStringSet("/Users/Alvin/Downloads/sequence (5).fasta")
 seqs <- c(seq_1, seq_2, seq_3, seq_4, seq_5)
 names(seqs)
 names(seqs) <- c("BV354391.1 Rottweiler", "KY994015.1 Galeocerdo", "CG891703.1 Yunnan","LZ248448.1 Functional Influenza", "FJ712034.1 Panthera")
@@ -9,13 +14,14 @@ alFreq <- alphabetFrequency(Alv)
 alFreq
 sum(alFreq[,"C"]) + sum(alFreq[,"G"]) 
 sum(alFreq[,"A"]) + sum(alFreq[,"T"]) 
-GC / (GC + AT )
 seq_1.seqinr <- seqinr::read.fasta("/Users/Alvin/Downloads/sequence (1).fasta")
 seqinr::GC(seq_1.seqinr$BV354391.1)
 Alvx <- msaConvert(Alv, type="seqinr::alignment")
 d <- dist.alignment(Alvx, "identity")
+d
+100 - (round(as.matrix(d)["BV354391.1", drop=FALSE], digits = 2) * 100)
 AlvS <- Biostrings::translate(seq_1)
 print(AlvS)
-100 - (round(as.matrix(d)["BV354391.1", drop=FALSE], digits = 2) * 100)
-write.fasta("AlvS", "AlvS", "AlS.fasta")
+write.fasta(sequences = AlvS, names = AlvS, file.out = "Sol", open = "w", nbchar = 60, as.string = FALSE)
+
 
