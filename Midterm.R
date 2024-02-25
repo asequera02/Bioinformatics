@@ -24,10 +24,15 @@ alFreq
 # everything should be in your Bioinformatics folder
 # I don't have access to this file so I can't grade it
 # the code looks correct though
-MutantX <- readDNAStringSet("sequence (6).fasta") 
+# MutantX <- readDNAStringSet("sequence (6).fasta") 
+# access this individual from the original data file:
+MutantX <- Homos$Homo_sapiens_6
 Mutant7 <- Biostrings::translate(MutantX)
 print(Mutant7)
 #Next we have to print the sequence into a Fasta file.
-setwd("C:/Users/Alvin/Downloads/vnz")
-write.fasta(sequences = Mutant7, names = Mutant7, file.out = "MUtXX", open = "w", nbchar = 60, as.string = FALSE)
+# setwd("C:/Users/Alvin/Downloads/vnz") # save everything to your Bioinformatics folder!
+
+# add the name in parentheses so that it knows what to name the sample
+# and add .fasta to the end of the file.out name
+write.fasta(sequences = Mutant7, names = "Mutant7", file.out = "MUtXX.fasta", open = "w", nbchar = 60, as.string = FALSE)
 #I searched in Blast and Genbank and found that sickle beta thalassaemia and sickle cell anemia are the diseases associated to the gene and the subject does have these diseases. 
